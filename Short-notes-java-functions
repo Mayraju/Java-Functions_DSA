@@ -1,1 +1,11 @@
+## how to sort the matrix in Java
 
+1. In the matrix, we sort the values based on the index value, as it treats everything as a single array
+
+let matrix = [[2,1],[9,19],[3,14]]  --> i want to sort the matrix based on the arr[I][0] the sorting will look like this
+
+** Arrays. sort( matrix, new Comparator<int[]>(){
+     public int compare(int[] a,int[] b){
+           return Integer.compare(a[0],b[0]);
+     }
+}) **
