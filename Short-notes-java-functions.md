@@ -70,7 +70,29 @@ we have two ways
         }
       ```
        
-       
+ ## How to compare the Strings in Java
+     in java we can't compare the strings by "==" operator, we need to use the function to compare the two strings.
+
+     1. equals  --> // Case sensitive comparison accounts for case of letters	
+     2. equalsIgnoreCase --> Case insensitive comparison through equalsIgnoreCase
+
+   ```java
+       String str1 = "Some text";
+        String str2 = "Some Text";
+        System.out.println(str1.equals(str2)); --> false
+        System.out.println(str1.equalsIgnoreCase(str2)); --> true
+```
+
+## How to convert String to char array vice versa
+1. to convert String to char array
+```java
+     char[] array = str.toCharArray();
+```
+   2. how to convert the char array to Strin
+ ```java
+      1.String str1 = new String(charArray);
+      2. String str2 = String.valueOf(charArray);
+```
        
        
 
