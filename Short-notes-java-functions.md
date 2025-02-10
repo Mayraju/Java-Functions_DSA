@@ -93,6 +93,34 @@ we have two ways
       1.String str1 = new String(charArray);
       2. String str2 = String.valueOf(charArray);
 ```
+
+## String Builder
+1. How to initialize the String Builder
+```java
+   StringBuilder stringBuilder = new StringBuilder();
+```
+2. How to add characters to String builder
+```java
+stringBuilder.append(character)
+```
+3. How to reverse the String using the String Builder
+      1. if it is already a StringBuilder object
+          ```java
+              stringBuilder st1 = stringBuilder.reverse()
+          ```
+     2. if it is not a StringBuilder Object.we need to convert that String into StringBuilder then use reverse function
+        ```java
+              StringBuilder str2 = new StringBuilder(string);
+               str2 = str2.reverse()
+        ```
+4. How to delete character in a String Builder Object
+   ```java
+        stringBuilder.deleteCharAt(index)
+   ```
+5. how to given character is a digit
+```java
+     Character.isDigit(character);
+```
        
        
 
